@@ -1,256 +1,203 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<title>Lumière Botanicals — Luxury Organic Skincare & Cosmetics</title>
-<style>
-*, *::before, *::after {
-box-sizing: border-box;
-}
-@page {
-size: A4;
-margin: 15mm 12mm;
-background-color: #faf6f0;
-}
-body {
-font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-color: #2c2a29;
-background-color: #faf6f0;
-margin: 0;
-padding: 0;
-font-size: 10.5pt;
-line-height: 1.6;
-}
-.header {
-background-color: #3b3531;
-color: #f4eee6;
-margin: -15mm -12mm 25px -12mm;
-padding: 25px 20px;
-text-align: center;
-}
-.header h1 {
-margin: 0 0 5px 0;
-font-size: 24pt;
-letter-spacing: 3px;
-font-weight: 300;
-text-transform: uppercase;
-}
-.header p {
-margin: 0;
-font-size: 10pt;
-letter-spacing: 2px;
-color: #d1c4b2;
-text-transform: uppercase;
-}
-.hero-banner {
-background-color: #e8ded1;
-border: 1px solid #d4c5b3;
-padding: 20px;
-text-align: center;
-margin-bottom: 25px;
-border-radius: 4px;
-}
-.hero-banner h2 {
-margin: 0 0 8px 0;
-font-size: 15pt;
-color: #4a403a;
-font-weight: 400;
-letter-spacing: 1px;
-}
-.hero-banner p {
-margin: 0;
-font-size: 10pt;
-color: #6b5e54;
-}
-h2.section-title {
-font-size: 14pt;
-color: #4a403a;
-border-bottom: 1px solid #d4c5b3;
-padding-bottom: 5px;
-margin-top: 25px;
-margin-bottom: 15px;
-text-transform: uppercase;
-letter-spacing: 1px;
-}
-.product-category {
-font-size: 8.5pt;
-color: #8c7d71;
-text-transform: uppercase;
-letter-spacing: 1px;
-margin-bottom: 8px;
-}
-.product-title {
-font-size: 11pt;
-font-weight: bold;
-color: #3b3531;
-margin: 0 0 5px 0;
-}
-.product-desc {
-font-size: 9.5pt;
-color: #595048;
-margin: 0 0 12px 0;
-}
-.product-price {
-font-size: 11pt;
-font-weight: bold;
-color: #7d5e42;
-margin: 0;
-}
-.specs-table {
-width: 100%;
-border-collapse: collapse;
-margin-top: 15px;
-background-color: #ffffff;
-border: 1px solid #e3dacd;
-border-radius: 4px;
-overflow: hidden;
-}
-.specs-table th, .specs-table td {
-padding: 10px 12px;
-text-align: left;
-font-size: 9.5pt;
-border-bottom: 1px solid #f0ebe4;
-}
-.specs-table th {
-background-color: #f4eee6;
-color: #4a403a;
-font-weight: 600;
-text-transform: uppercase;
-letter-spacing: 0.5px;
-font-size: 8.5pt;
-}
-.specs-table tr:last-child td {
-border-bottom: none;
-}
-.math {
-font-family: 'Times New Roman', serif;
-font-style: italic;
-font-weight: bold;
-color: #7d5e42;
-}
-.footer-note {
-margin-top: 30px;
-text-align: center;
-font-size: 8.5pt;
-color: #8c7d71;
-border-top: 1px solid #e3dacd;
-padding-top: 15px;
-letter-spacing: 0.5px;
-}
-</style>
+  <title>Luna Dress Shop</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff5f8;
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      background: #c2185b;
+      color: white;
+      padding: 25px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    /* Navigation */
+    nav {
+      background: white;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 2px 8px #ddd;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #c2185b;
+      font-weight: bold;
+    }
+
+    /* Shop */
+    .shop {
+      padding: 35px 20px;
+      text-align: center;
+    }
+
+    .shop h2 {
+      color: #c2185b;
+      margin-bottom: 25px;
+    }
+
+    .dress {
+      display: inline-block;
+      vertical-align: top;
+      background: white;
+      width: 220px;
+      margin: 12px;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 3px 12px #ddd;
+      transition: 0.3s;
+    }
+
+    .dress:hover {
+      transform: translateY(-5px);
+    }
+
+    .dress img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .dress h3 {
+      margin: 12px 0 8px;
+    }
+
+    .price {
+      color: #c2185b;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    button {
+      background: #c2185b;
+      color: white;
+      border: 0;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #8e1645;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 30px;
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Mobile */
+    @media (max-width: 600px) {
+      .dress {
+        width: 90%;
+        max-width: 300px;
+      }
+
+      nav a {
+        margin: 0 5px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-<div class="header">
-<h1>Lumière Botanicals</h1>
-<p>Pure Organic Skincare &amp; Conscious Beauty</p>
-</div>
-<div class="hero-banner">
-<h2>Summer Glow Collection 2026</h2>
-<p>Formulated with wild-harvested botanicals, cold-pressed oils, and zero synthetic
-fragrances. Designed to restore skin radiance naturally.</p>
-</div>
-<h2 class="section-title">Featured Best-Sellers</h2>
-<!-- Product Row 1 -->
-<table style="width: 100%; border-collapse: separate; border-spacing: 12px 0; margin-left:
--12px; margin-right: -12px; margin-bottom: 15px;">
-<tr>
-<td style="width: 33.33%; background-color: #ffffff; border: 1px solid #e3dacd;
-padding: 15px; vertical-align: top; border-radius: 4px;">
-<div class="product-category">Facial Serum</div>
-<div class="product-title">Botanical Gold Elixir</div>
-<div class="product-desc">Infused with 24k gold flakes, rosehip, and jojoba oil to
-deeply hydrate and brighten complexion.</div>
-<div class="product-price">$68.00</div>
-</td>
-<td style="width: 33.33%; background-color: #ffffff; border: 1px solid #e3dacd;
-padding: 15px; vertical-align: top; border-radius: 4px;">
-<div class="product-category">Hydration</div>
-<div class="product-title">Velvet Petal Cream</div>
-<div class="product-desc">A rich whipped moisturizer packed with shea butter,
-chamomile extract, and hyaluronic acid.</div>
-<div class="product-price">$54.00</div>
-</td>
-<td style="width: 33.33%; background-color: #ffffff; border: 1px solid #e3dacd;
-padding: 15px; vertical-align: top; border-radius: 4px;">
-<div class="product-category">Lip Care</div>
-<div class="product-title">Rose Tinted Lip Balm</div>
-<div class="product-desc">Nourishing organic beeswax balm offering a subtle,
-natural flush of rose color for daily wear.</div>
-<div class="product-price">$24.00</div>
-</td>
-</tr>
-</table>
-<!-- Product Row 2 -->
-<table style="width: 100%; border-collapse: separate; border-spacing: 12px 0; margin-left:
--12px; margin-right: -12px; margin-bottom: 25px;">
-<tr>
-<td style="width: 33.33%; background-color: #ffffff; border: 1px solid #e3dacd;
-padding: 15px; vertical-align: top; border-radius: 4px;">
-<div class="product-category">Cleanser</div>
-<div class="product-title">Cloud Cleanse Foam</div>
-<div class="product-desc">Gentle amino-acid cleanser that removes impurities
-without stripping the skin barrier.</div>
-<div class="product-price">$38.00</div>
-</td>
-<td style="width: 33.33%; background-color: #ffffff; border: 1px solid #e3dacd;
-padding: 15px; vertical-align: top; border-radius: 4px;">
-<div class="product-category">Eye Care</div>
-<div class="product-title">Caffeine Awakening Gel</div>
-<div class="product-desc">Cooling eye contour gel infused with green tea and
-coffee bean extracts to reduce puffiness.</div>
-<div class="product-price">$45.00</div>
-</td>
-<td style="width: 33.33%; background-color: #ffffff; border: 1px solid #e3dacd;
-padding: 15px; vertical-align: top; border-radius: 4px;">
-<div class="product-category">Exfoliant</div>
-<div class="product-title">Hibiscus Polish Mask</div>
-<div class="product-desc">Enzymatic clay mask featuring white kaolin clay and
-ground hibiscus flower for gentle renewal.</div>
-<div class="product-price">$42.00</div>
-</td>
-</tr>
-</table>
-<h2 class="section-title">Formulation &amp; Ingredient Breakdown</h2>
-<p>Our cosmetics adhere to strict purity standards. Effectiveness and safety metrics are
-calculated through dermatological trials where skin hydration index <span class="math">H</
-span> depends on active botanical concentration <span class="math">C</span> and
-absorption rate <span class="math">r</span>:</p>
-<div style="text-align: center; margin: 15px 0; font-size: 1.1em;">
-<span class="math">H = H<sub>0</sub> + r &times; C<sup>0.8</sup></span>
-</div>
-<table class="specs-table">
-<thead>
-<tr>
-<th>Product Line</th>
-<th>Key Active Ingredient</th>
-<th>Skin Type</th>
-<th>Efficacy Rating</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Botanical Gold Elixir</td>
-<td>Rosa Mosqueta &amp; 24k Gold</td>
-<td>All / Dry</td>
-<td>98.5% Hydration Boost</td>
-</tr>
-<tr>
-<td>Velvet Petal Cream</td>
-<td>Butyrospermum Parkii</td>
-<td>Normal / Sensitive</td>
-<td>96.2% Barrier Repair</td>
-</tr>
-<tr>
-<td>Cloud Cleanse Foam</td>
-<td>Green Tea Amino Acids</td>
-<td>Combination / Oily</td>
-<td>99.1% Pore Clarity</td>
-</tr>
-</tbody>
-</table>
-<div class="footer-note">
-&copy; 2026 Lumière Botanicals Inc. All rights reserved. Certified Organic &amp; Cruelty-
-Free.
-</div>
+
+  <header>
+    <h1>?? Luna Dress Shop</h1>
+    <p>Fashion for Every Occasion</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#shop">Shop</a>
+    <a href="#contact">Contact</a>
+    ?? Cart: <span id="cart">0</span>
+  </nav>
+
+  <section class="shop" id="shop">
+
+    <h2>Our Dresses</h2>
+
+    <div class="dress">
+      <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=400&q=80">
+      <h3>Pink Dress</h3>
+      <p class="price">$50</p>
+      <button onclick="addCart()">Buy Now</button>
+    </div>
+
+    <div class="dress">
+      <img src="https://images.unsplash.com/photo-1539008835657-9e8e9680c956?auto=format&fit=crop&w=400&q=80">
+      <h3>Black Dress</h3>
+      <p class="price">$60</p>
+      <button onclick="addCart()">Buy Now</button>
+    </div>
+
+    <div class="dress">
+      <img src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=400&q=80">
+      <h3>Evening Dress</h3>
+      <p class="price">$75</p>
+      <button onclick="addCart()">Buy Now</button>
+    </div>
+
+    <div class="dress">
+      <img src="https://images.unsplash.com/photo-1591369822096-ffd140ec948f?auto=format&fit=crop&w=400&q=80">
+      <h3>White Dress</h3>
+      <p class="price">$55</p>
+      <button onclick="addCart()">Buy Now</button>
+    </div>
+
+    <div class="dress">
+      <img src="https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=400&q=80">
+      <h3>Red Dress</h3>
+      <p class="price">$70</p>
+      <button onclick="addCart()">Buy Now</button>
+    </div>
+
+    <div class="dress">
+      <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=400&q=80">
+      <h3>Floral Dress</h3>
+      <p class="price">$65</p>
+      <button onclick="addCart()">Buy Now</button>
+    </div>
+
+  </section>
+
+  <footer id="contact">
+    <p>?? Email: luna@example.com</p>
+    <p>? 2026 Luna Dress Shop</p>
+  </footer>
+
+  <script>
+    let cart = 0;
+
+    function addCart() {
+      cart++;
+      document.getElementById("cart").textContent = cart;
+      alert("Dress added to cart!");
+    }
+  </script>
+
 </body>
 </html>
